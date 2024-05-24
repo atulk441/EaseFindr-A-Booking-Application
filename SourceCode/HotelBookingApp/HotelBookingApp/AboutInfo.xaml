@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             NavigationPage.HasNavigationBar="False"
+             x:Class="HotelBookingApp.AboutInfo">
+        <StackLayout>
+            <Label Text="EaseFindr" HorizontalOptions="Center" FontSize="55" Margin="0,10,0,0" />
+            <BoxView BackgroundColor="SkyBlue" HeightRequest="10"/>
+        <Label Text="1.) Aims to provide users with a seamless and convenient way to book hotels and other accommodations around the world." Margin="0,20,0,0" FontSize="20"></Label>
+        <Label Text="2.) Our mission is to help users find the best deals and rates for their preferred destinations while providing them with a hassle-free booking experience."  Margin="0,10,0,0" FontSize="20"></Label>
+        <Label Text="3.) Designed to cater to the needs of all types of travelers, whether they are traveling for business or leisure."  Margin="0,10,0,0" FontSize="20"></Label>
+        <Label Text="4.) We offer a wide range of accommodations to choose from."  Margin="0,10,0,0" FontSize="20"></Label>
+        <Label Text="5.) User Interface is designed to be intuitive and easy to use, allowing users to book their preferred accommodations in just a few clicks."  Margin="0,10,0,0" FontSize="20"></Label>
+        <Label Text="6.) This app is constantly improving and evolving, with new features and enhancements added regularly to provide users with the best possible booking experience."  Margin="0,10,0,0" FontSize="20"></Label>
+        <Button Text="&lt; &lt; BACK" FontSize="40" Clicked="bt_back" TextColor="Red"></Button>
+
+
+    </StackLayout>
+</ContentPage>
