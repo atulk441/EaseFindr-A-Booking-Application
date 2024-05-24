@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                          NavigationPage.HasNavigationBar="False"
+             x:Class="HotelBookingApp.BookingScreen">
+    <ContentPage.Content>
+        
+        <Grid Padding="0,10,0,0" Margin="5,10,5,30">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50" />
+                <RowDefinition Height="5" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="50" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="50" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Label Text="" x:Name="comp_name" FontAttributes="Bold" FontSize="35" TextColor="Brown" HorizontalOptions="Center" Grid.Row="0" Grid.Column="0" ></Label>
+            <BoxView BackgroundColor="Black" Grid.Row="1" Grid.Column="0"/>
+            <Entry Placeholder="Name" IsEnabled="False" Text="" x:Name="name" FontSize="25" FontAttributes="Bold" Grid.Row="2" Grid.Column="0"/>
+            <Entry Placeholder="Email" Text="" IsEnabled="False" x:Name="email" FontSize="23" FontAttributes="Bold" Grid.Row="3" Grid.Column="0"/>
+
+            <Entry Placeholder="Phone" Text="" x:Name="phone" Grid.Row="4" Grid.Column="0"/>
+            <Picker Title="Select One" x:Name="options" Grid.Row="5" Grid.Column="0">
+                <Picker.Items>
+
+                </Picker.Items>
+            </Picker>
+            <DatePicker x:Name="datePicker" Grid.Row="6" Grid.Column="0"/>
+            <TimePicker x:Name="timePicker" Grid.Row="7" Grid.Column="0"/>
+            <Label Text="Invalid Message: " x:Name="table" TextColor="Red" FontSize="22" Grid.Row="9" Grid.Column="0"/>
+            <Button Text="NEXT" Clicked="bt_next" Grid.Row="10" Grid.Column="0" FontSize="25" FontAttributes="Bold"/>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

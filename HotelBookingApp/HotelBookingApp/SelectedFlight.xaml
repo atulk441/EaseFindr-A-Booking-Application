@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                          NavigationPage.HasNavigationBar="False"
+
+             x:Class="HotelBookingApp.SelectedFlight">
+    <ContentPage.Content>
+        <StackLayout>
+
+            <StackLayout Padding="0,10,0,0">
+                <Label Text="" x:Name="comp_name" FontAttributes="Bold" FontSize="35" TextColor="Brown" HorizontalOptions="Center" Padding="0,0,0,8"></Label>
+                <BoxView BackgroundColor="Black" HeightRequest="4" Margin="0,0,0,5"></BoxView>
+            </StackLayout>
+
+
+            <Image x:Name="image_link"  ScaleX="1.5" ScaleY="1.5" Margin="36"></Image>
+
+            <ScrollView>
+                <StackLayout>
+                    <StackLayout Margin="10">
+                        <Label x:Name="description" Text="Our Services: " FontAttributes="Bold" FontSize="Large"></Label>
+                        <Label x:Name="service_1" FontSize="Medium"></Label>
+                        <Label x:Name="service_2" FontSize="Medium"></Label>
+                        <Label x:Name="service_3" FontSize="Medium"></Label>
+                        <Label x:Name="service_4" FontSize="Medium"></Label>
+                        <Label x:Name="service_5" FontSize="Medium"></Label>
+                    </StackLayout>
+                    <StackLayout>
+                        <Grid Padding="0,0,0,0">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Label Text="Economic Class"  HorizontalOptions="Center" Grid.Row="0" Grid.Column="0" Padding="0,10,0,0" FontSize="Medium" FontAttributes="Bold"/>
+                            <Label Text="Businness Class" HorizontalOptions="Center" Grid.Row="0"  Grid.Column="1" Padding="0,10,0,0" FontSize="Medium" FontAttributes="Bold"/>
+                            <Label Text="First Class" HorizontalOptions="Center" Grid.Row="0"   Grid.Column="2" Padding="0,10,0,0" FontSize="Medium" FontAttributes="Bold"/>
+
+                            <Label Text="(starting from)"  HorizontalOptions="Center" Grid.Row="1" Grid.Column="0" Padding="0,-3,0,0" Margin="-5" FontSize="Small" FontAttributes="Bold"/>
+                            <Label Text="(starting from)" HorizontalOptions="Center" Grid.Row="1"  Grid.Column="1" Padding="0,-3,0,0" Margin="-5"  FontSize="Small" FontAttributes="Bold"/>
+                            <Label Text="(starting from)" HorizontalOptions="Center" Grid.Row="1"   Grid.Column="2" Padding="0,-3,0,0" Margin="-5"  FontSize="Small" FontAttributes="Bold"/>
+                            <Label x:Name="eco_price"  HorizontalOptions="Center" Grid.Row="2" Grid.Column="0" Padding="0,-5,0,0"  Margin="-20" FontSize="Large" />
+                            <Label x:Name="buss_price"  HorizontalOptions="Center" Grid.Row="2"  Grid.Column="1" Padding="0,-5,0,0"  Margin="-20" FontSize="Large" />
+                            <Label x:Name="frst_price"  HorizontalOptions="Center" Grid.Row="2"   Grid.Column="2" Padding="0,-5,0,0"  Margin="-20" FontSize="Large" />
+
+                        </Grid>
+                    </StackLayout>
+
+
+                    <StackLayout>
+
+                        <Label Text="How would you rate our service?" FontSize="Large" FontAttributes="Bold" HorizontalOptions="Center" Padding="0,0,0,0"></Label>
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                            <Button Text="1" WidthRequest="60"  FontSize="20" x:Name="bt1" Clicked="bt_rating"></Button>
+                            <Button Text="2" WidthRequest="60" FontSize="20" x:Name="bt2" Clicked="bt_rating"></Button>
+                            <Button Text="3" WidthRequest="60" FontSize="20" x:Name="bt3" Clicked="bt_rating"></Button>
+                            <Button Text="4" WidthRequest="60" FontSize="20" x:Name="bt4" Clicked="bt_rating"></Button>
+                            <Button Text="5" WidthRequest="60" FontSize="20" x:Name="bt5" Clicked="bt_rating"></Button>
+                        </StackLayout>
+                    </StackLayout>
+
+                </StackLayout>
+            </ScrollView>
+
+            <StackLayout Orientation="Horizontal">
+                <Button Text="Back" Clicked="bt_back"  WidthRequest="150" FontSize="25" FontAttributes="Bold"></Button>
+                <Button Text="Book a Flight" Clicked="bt_request"  HeightRequest="70" WidthRequest="225" FontSize="25" FontAttributes="Bold"  VerticalOptions="End"></Button>
+            </StackLayout>
+
+            <!--<StackLayout Orientation="Horizontal">
+                <Button Text="Back" Clicked="bt_back" WidthRequest="150" FontSize="25" FontAttributes="Bold"></Button>
+                <Button Text="Book a Flight" Clicked="bt_request" WidthRequest="60" HeightRequest="70" FontSize="30" FontAttributes="Bold"  VerticalOptions="End"></Button>
+            </StackLayout>-->
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

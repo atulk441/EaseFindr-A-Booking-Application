@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             NavigationPage.HasNavigationBar="False"
+             x:Class="HotelBookingApp.RegisterScreen">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout>
+                <Label Text="EaseFindr" HorizontalOptions="Center" FontSize="55" Margin="0,10,0,0" />
+                <BoxView BackgroundColor="SkyBlue" HeightRequest="10"/>
+            </StackLayout>
+
+            <StackLayout Margin="0,20,0,0">
+                <Image Source="https://st2.depositphotos.com/1832477/10135/v/600/depositphotos_101359336-stock-illustration-five-3d-gold-stars-premium.jpg"></Image>
+
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Padding="0, 30, 0, 0">
+                    <Label HorizontalOptions="Center"  >
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="Full Name" FontSize="25" TextColor="Black" FontAttributes="Bold"/>
+                                <Span Text="*" TextColor="Red" FontSize="25" FontAttributes="Bold"/>
+                                <Span Text="  :      " TextColor="Black" FontSize="25" FontAttributes="Bold"/>
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                    <Entry x:Name="entry_name" Text="" WidthRequest="170" HorizontalOptions="Center" HorizontalTextAlignment="Center"></Entry>
+                </StackLayout>
+
+
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Padding="0, 30, 0, 20">
+                    <Label HorizontalOptions="Center"  >
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="Email ID" FontSize="25" TextColor="Black" FontAttributes="Bold"/>
+                                <Span Text="*" TextColor="Red" FontSize="25" FontAttributes="Bold"/>
+                                <Span Text="     :      " TextColor="Black" FontSize="25" FontAttributes="Bold"/>
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                    <Entry x:Name="entry_userId" Text=""  WidthRequest="170" HorizontalOptions="Center" HorizontalTextAlignment="Center"></Entry>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Padding="0, 10, 0, 20">
+                    <Label HorizontalOptions="Center"  >
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="Password" FontSize="25" TextColor="Black" FontAttributes="Bold"/>
+                                <Span Text="*" TextColor="Red" FontSize="25" FontAttributes="Bold"/>
+                                <Span Text="  :      " TextColor="Black" FontSize="25" FontAttributes="Bold"/>
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                    <Entry x:Name="entry_password" IsPassword="True" Text="" WidthRequest="170" HorizontalOptions="Center" HorizontalTextAlignment="Center"></Entry>
+                </StackLayout>
+
+
+
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Padding="0, 0, 0, 20">
+                    <Label Text="Invalid messages: " FontSize="Medium" TextColor="Red" FontAttributes="Italic" HorizontalTextAlignment="Center" Padding="0, 25, 0, 0"></Label>
+                    <Label Text="                      " x:Name="table" FontSize="Medium" TextColor="Red" FontAttributes ="Italic" HorizontalTextAlignment="Center" Padding="0, 25, 0, 0"></Label>
+                </StackLayout>
+
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Padding="0, 65, 0, 0">
+                <Button Text="&lt;BACK" TextColor="Blue" Clicked="bt_back" WidthRequest="130" HorizontalOptions="Center" HeightRequest="70" FontSize="30"  FontAttributes ="Bold"/>
+                <Button Text="Register Now" TextColor="Blue" Clicked="bt_register" WidthRequest="250" HorizontalOptions="Center" HeightRequest="70" FontSize="30"  FontAttributes ="Bold"/>
+
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
